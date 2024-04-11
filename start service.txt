@@ -1,0 +1,8 @@
+go run main.go websocket_client.go -iin_bin=140940007532 -server_1c=true -addr1C=https://wctsrv0153.ad.wabtec.com/1C_KZ_UPDATE/hs/smartdocs/reports/
+
+go run main.go websocket_client.go -iin_bin=140940007532 -addrPortal=127.0.0.1:8000  -addr1C=https://wctsrv0153.ad.wabtec.com/1C_KZ_UPDATE/hs/smartdocs/reports/ -user1C=webservice -password1C=123
+
+websocket_client.exe -iin_bin=140940007532 -addr1C=https://wctsrv0153.ad.wabtec.com/1C_KZ_UPDATE/hs/smartdocs/reports/ -user1C=webservice -password1C=123
+
+РАСХОДИМСЯ go используем чистый "websocket" а серверная часть на Python "socket.io", на локальной машине все работает отлично так как ws не трубует рукопожатия.
+а вот WSS требует они websocket и socket.io не будут соединяться между собой, разные протоколы просто.
